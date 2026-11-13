@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cinzel: 'Cinzel', 'Playfair Display', Georgia, serif;
+  --font-plus-jakarta: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #100507;
+  color: #FFF7EA;
+  font-family: var(--font-plus-jakarta);
+  overflow-x: hidden;
+  selection-background-color: #E5B842;
+  selection-color: #100507;
+}
+
+::selection {
+  background: #E5B842;
+  color: #100507;
+}
+
+/* Custom Imperial Gold Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #100507;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3A181E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E5B842;
+}
+
+/* Subtle Royal Texture Background */
+.chalkboard-bg {
+  background-color: #100507;
+  background-image: 
+    radial-gradient(ellipse at 50% -20%, rgba(107, 20, 34, 0.25) 0%, transparent 70%),
+    radial-gradient(rgba(229, 184, 66, 0.04) 1px, transparent 0);
+  background-size: 100% 100%, 28px 28px;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF9EB 0%, #F5CE68 40%, #E5B842 70%, #B88924 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.burgundy-gradient-btn {
+  background: linear-gradient(135deg, #8E1C2E 0%, #6B1422 50%, #420B14 100%);
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #F5CE68 0%, #E5B842 50%, #C59424 100%);
+}
